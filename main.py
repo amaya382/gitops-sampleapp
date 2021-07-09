@@ -6,7 +6,7 @@ api = responder.API()
 
 @api.route("/")
 def index(req, res):
-    res.text = os.getenv("SAMPLEAPP_MESSAGE", "Hello")
+    res.text = os.getenv("SAMPLEAPP_MESSAGE", "Hello") + "!!"
 
 
 if __name__ == "__main__":
